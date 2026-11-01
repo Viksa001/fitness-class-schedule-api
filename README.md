@@ -104,7 +104,4 @@ curl -X GET http://localhost:8080/reports/busiest-rooms \
 -H "X-API-Key: demo-key-2026"
 ```
 
-## 7. UI Implementation
-
-Working UI has been implemented alongside the functional API.
 
