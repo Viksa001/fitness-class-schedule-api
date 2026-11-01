@@ -95,4 +95,9 @@ public class FitnessClassService {
         return rooms;
     }
 
+    public List<FitnessClass> getClassesByYear(int year){
+        List<FitnessClass> fitnessClass = fitnessClassRepository.findByYear(year);
+        return  fitnessClass;
+    }
+
 }

@@ -4,6 +4,10 @@
 
 The Fitness Class Schedule API is a Spring Boot REST API used for managing fitness classes, instructors and rooms. The system allows administrators to register rooms and instructors, create fitness classes, schedule classes into weekly time slots, retrieve schedules, generate room usage reports, and soft delete scheduled classes. The API enforces scheduling rules to prevent conflicting room bookings.
 
+The project also includes a web dashboard, served at `http://localhost:8080`, for managing the timetable visually.
+
+![FitBuddy studio overview](docs/overview.png)
+
 ---
 
 # Running the Project Locally
@@ -99,3 +103,8 @@ curl -X DELETE http://localhost:8080/schedule/1 \
 curl -X GET http://localhost:8080/reports/busiest-rooms \
 -H "X-API-Key: demo-key-2026"
 ```
+
+## 7. UI Implementation
+
+Working UI has been implemented alongside the functional API.
+

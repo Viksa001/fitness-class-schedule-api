@@ -29,6 +29,9 @@ public class FitnessClass {
 
     private int durationMinutes;
 
+    @Column(name = "class_year")
+    private int year;
+
     @JsonIgnore
     private boolean deleted = false;
 
@@ -106,6 +109,14 @@ public class FitnessClass {
 
     public void setDeleted(boolean deleted) {
         this.deleted = deleted;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
 

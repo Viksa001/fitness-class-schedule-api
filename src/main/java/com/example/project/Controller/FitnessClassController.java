@@ -42,6 +42,11 @@ public class FitnessClassController {
         return fitnessClassService.retrieveClass(classId, pageable);
     }
 
+    @GetMapping("/year/{year}")
+    public List<FitnessClass> getClassesByYear(@PathVariable("year") int year){
+        return fitnessClassService.getClassesByYear(year);
+    }
+
     //GET BUSIEST ROOMS
 
 }

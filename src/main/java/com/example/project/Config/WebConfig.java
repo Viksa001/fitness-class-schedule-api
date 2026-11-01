@@ -19,6 +19,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(apiKeyInterceptor);
+        registry.addInterceptor(apiKeyInterceptor)
+                .excludePathPatterns("/", "/index.html", "/assets/**", "/favicon.ico");
     }
 }

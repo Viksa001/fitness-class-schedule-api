@@ -24,4 +24,6 @@ public interface FitnessClassRepository extends JpaRepository <FitnessClass, Lon
     List<FitnessClass> findByDeletedFalseAndRoomIsNotNull();
 
     Page<FitnessClass> findByName(String name, Pageable pageable);
+
+    List<FitnessClass> findByYear(int year);
 }
